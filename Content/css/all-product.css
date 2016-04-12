@@ -25,7 +25,7 @@
 .left-classify-box h1:first-child{border-top:none;}
 .left-classify-box li a{transition: all .3s;display: block;height: 33px;font-size: 14px;line-height: 33px;text-indent: 39px;color: #4d4d4d;background: #fff;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;}
 .left-classify-box li a:hover{color:#FF4A4A;text-decoration:underline;}
-.left-classify-box .sanjiao{transition: all .3s; transform-origin:top center 0; width: 0;height: 0;border: 5px solid #FF4A4A;border-color:  #FF4A4A transparent transparent  transparent; position: absolute;left: 21px;top:15px;}
+.left-classify-box .sanjiao{transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s; transform-origin:top center 0; width: 0;height: 0;border: 5px solid #FF4A4A;border-color:  #FF4A4A transparent transparent  transparent; position: absolute;left: 21px;top:15px;}
 	/* left-rank */
 .left-rank-box>a{display: block; width: 184px;height: 76px;margin: 0 auto;border-bottom:1px dashed #C7C7C7;	}
 .left-rank-box img{width: 54px;height: 75px;float: left;}
@@ -41,6 +41,7 @@
 
 
 .right-word-header{padding-bottom: 5px; box-sizing: border-box;background-color:#E6E6E6;min-height: 32px;}
+.right-word-header .xyf-box{float: left;width: 800px;}
 .right-word-header .choice{width: 58px;height: 22px;background: #FF4A4A;color: #fff;margin-top: 6px;margin-right: 25px;cursor: pointer;line-height: 22px;}
 .right-word-header .jia-expansion{background: url(../images/icon/expansion.png) center center no-repeat;float: left;width: 11px;height: 11px; margin: 5px 0 0;}
 .right-word-header .jia-shrink{background: url(../images/icon/shrink.png) center center no-repeat;float: left;width: 11px;height: 11px; margin: 5px 0 0;}
@@ -48,7 +49,7 @@
 .right-word-header b{margin-top: 7px;}
 .right-word-header p{border:1px solid #FF4A4A;color:#ff4a4a; font-size: 14px;display: inline-block;height: 22px;line-height: 22px;margin-top: 5px;
 margin-right: 10px;padding-left: 3px;}
-.right-word-header .close{font-style: normal; float: right;margin-left: 10px;width: 16px;text-align: center;font-size: 22px;cursor: pointer;transform: rotate(45deg);}
+.right-word-header .close{font-style: normal; float: right;margin-left: 10px;width: 16px;text-align: center;font-size: 22px;cursor: pointer;transform: rotate(45deg);-o-transform: rotate(45deg);-ms-transform: rotate(45deg);}
 
 .right-word-box>div{height: 95px;box-sizing: border-box;}
 .right-word-box .brand,.right-word-box .classify,.right-word-box .effect,.right-word-box .price{width:100%; padding: 9px 0 10px;overflow: hidden;}
@@ -74,5 +75,5 @@ margin-right: 10px;padding-left: 3px;}
 .right-pic-header{width: 962px;height: 40px;margin: 0 auto;box-sizing: border-box;background-color:#E6E6E6;line-height: 34px;}	
 
 /* js class */
-.angle{transform: rotate(-90deg);}
+.angle{transform: rotate(-90deg);-o-transform: rotate(-90deg);-ms-transform: rotate(-90deg);}
 .shrink{display: none;}
