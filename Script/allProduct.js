@@ -3,6 +3,7 @@
 	所有商品页面js文件
 	xyf
 	注：此处的域名：特指：品牌，分类，功效，价格
+    域名区域的功能实现与html中的类名挂钩，如 price-3 。进行页面类名添加删除是要注意。ps.此处可以通过js添加类名，从而简化类名修改。
 */
 /*全局定义*/
 var GLOBAL = {};
@@ -296,7 +297,24 @@ function sure(){
 			 
 		})
 		$(arr_1).each(function(n){//将选中的选项在js中统一生成字符串，一次性添加
-			content += '<p>价格：' + valarr[n] + '<i class="close '+ arr_0[n]+'-' + arr_1[n]+ '">+</i></p>';
+            var realmName = arr_0[n];
+            var name = '';
+            switch(realmName){
+            case 'brand':
+                name = '品牌：';
+            break;
+            case 'classify':
+                name = '分类：';
+            break;
+            case 'effect':
+                name = '功效：';
+            break;
+            case 'price':
+                name = '价格：';
+            break;
+         }
+
+			content += '<p>'+ name + valarr[n] + '<i class="close '+ realmName +'-' + arr_1[n]+ '">+</i></p>';
 		})
 				GLOBAL.xyfBox.append(content);
 				content = '';
@@ -320,6 +338,6 @@ shrink();//多选收起
 expansion();//多选展开
 fnMore();//收起
 fnLess();//展开
-xyf_choose();
-xyf_delete();
+xyf_choose();//多选
+xyf_delete();//删除
 sure();

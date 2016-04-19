@@ -1,0 +1,9 @@
+arrows.png, 8, 9, 0, 0
+expansion.png, 11, 11, 26, 0
+on-arrows.png, 8, 9, 52, 0
+on-star.png, 14, 14, 78, 0
+on-updown.png, 16, 16, 104, 0
+search.png, 15, 15, 130, 0
+shrink.png, 11, 11, 156, 0
+star.png, 14, 13, 182, 0
+updown.png, 16, 16, 208, 0
